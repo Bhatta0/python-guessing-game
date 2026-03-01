@@ -1,4 +1,4 @@
-# Number Guessing Game 🎮
+# Number Guessing Game
 
 A command-line number guessing game built with Python.
 
