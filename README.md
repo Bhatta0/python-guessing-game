@@ -1,35 +1,50 @@
-# Python Calculator 🧮
+# Number Guessing Game 🎮
 
-A command-line calculator built with Python.
+A command-line number guessing game built with Python.
 
 ## Features
-- Addition, Subtraction, Multiplication, Division
-- Handles division by zero gracefully
-- Handles invalid input without crashing
-- Runs in a loop until user exits
+- Three difficulty levels — Easy, Medium, Hard
+- Unlimited guesses on Easy mode
+- 10 guess limit on Medium mode
+- 5 guess limit on Hard mode
+- Invalid input handling without crashing
+- Play again option after each game
 
 ## Concepts Learned
-- Functions and return values
-- User input and type conversion
-- Conditionals (if/elif/else)
-- Error handling with try/except
-- While loops and break
+- while loops and break statements
+- import random and randint()
+- Multiple functions with single responsibility
+- Nested conditionals
+- Counter variables
+- None value usage
 
 ## How to Run
 ```bash
-python calculator.py
+python guessing_game.py
 ```
 
 ## Demo
 ```
-=== Simple Calculator ===
-Type 'exit' to quit anytime.
-Enter first number: 10
-Enter second number: 5
-Operations: +  -  *  /
-Choose operation: +
-Result: 15.0
+=== Number Guessing Game ===
 
-Calculate again? (yes/exit): exit
-Goodbye!
+Select Difficulty:
+1. Easy   — Unlimited guesses
+2. Medium — 10 guesses max
+3. Hard   — 5 guesses max
+Enter 1, 2 or 3: 2
+
+Enter your guess (1-100): 50
+Too high!
+Guesses remaining: 9
+
+Enter your guess (1-100): 25
+Too low!
+Guesses remaining: 8
+
+Enter your guess (1-100): 37
+Correct!
+You got it in 3 attempts!
+
+Play again? (yes/quit): quit
+Thanks for playing. Goodbye!
 ```
